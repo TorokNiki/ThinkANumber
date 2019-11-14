@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/linerlayout1"
+        android:gravity="center_horizontal"
+        >
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/heart2"
+            android:id="@+id/elet1"
+            />
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/heart2"
+            android:id="@+id/elet2"
+            />
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/heart2"
+            android:id="@+id/elet3"
+            />
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/heart2"
+            android:id="@+id/elet4"
+            />
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/heart2"
+            android:id="@+id/elet5"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linerlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="537dp"
+        android:layout_below="@id/linerlayout1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Találd ki a számot!!"
+            android:textAlignment="center"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/plusz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/text"
+            android:background="#03A9F4"
+            android:text="+"
+            android:textSize="40dp"
+
+            />
+
+        <TextView
+            android:id="@+id/megelenit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/plusz"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/miusz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/megelenit"
+            android:background="#8BC34A"
+            android:text="-"
+            android:textSize="40dp" />
+        <Button
+            android:id="@+id/kuldes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/miusz"
+            android:background="#F44336"
+            android:text="KŰLDÉS"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+</RelativeLayout>
